@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Switcher</title>
+</head>
+<body>
+<img id="imageElement" src="../src/img/folder/books-g8dee6bf6b_1280.jpg" alt="Image 1">
+<button id="buttonImage1">Show Image 1</button>
+<button id="buttonImage2">Show Image 2</button>
+
+<script>
+var imageElement = document.getElementById("imageElement");
+var buttonImage1 = document.getElementById("buttonImage1");
+var buttonImage2 = document.getElementById("buttonImage2");
+
+buttonImage1.addEventListener("click", function() {
+  imageElement.src = "../src/img/folder/books-g8dee6bf6b_1280.jpg";
+});
+
+buttonImage2.addEventListener("click", function() {
+  imageElement.src = "../src/img/folder/books-gb22d98821_1280.jpg";
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button and Div Example</title>
+<style>
+  #content {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+</style>
+</head>
+<body>
+<button id="changeButton">Click Me</button>
+<div id="content">Initial Content</div>
+
+<script>
+document.getElementById("changeButton").addEventListener("click", function() {
+  var contentDiv = document.getElementById("content");
+  contentDiv.innerHTML = "New Message or Image"; // You can replace this with your desired content, like an image tag or another message.
+});
+</script>
+</body>
+</html>
